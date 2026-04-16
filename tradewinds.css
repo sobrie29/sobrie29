@@ -1,14 +1,13 @@
-/* ===========================
-   GLOBAL RESET
-   =========================== */
+/* GLOBAL RESET */
 
 * {
     box-sizing: border-box;
 }
 
-/* ===========================
-   BASE PAGE STYLES
-   =========================== */
+
+
+
+/* BASE PAGE STYLES */
 
 body {
     background-color: #EAEAEA;
@@ -17,9 +16,10 @@ body {
     margin: 0;
 }
 
-/* ===========================
-   LAYOUT WRAPPER
-   =========================== */
+
+
+
+/* LAYOUT WRAPPER */
 
 #wrapper {
     max-width: 1240px;
@@ -33,9 +33,10 @@ body {
     );
 }
 
-/* ===========================
-   HEADER
-   =========================== */
+
+
+
+/* HEADER */
 
 header {
     background-color: #d9e6ea;
@@ -77,9 +78,11 @@ header a:hover {
     color: #90C7E3;
 }
 
-/* ===========================
-   HEADINGS
-   =========================== */
+
+
+
+
+/* HEADINGS */
 
 h1 {
     margin: 0;
@@ -107,9 +110,11 @@ h3 {
     text-align: center;
 }
 
-/* ===========================
-   NAVIGATION
-   =========================== */
+
+
+
+
+/* NAVIGATION */
 
 nav {
     padding: 0;
@@ -145,9 +150,11 @@ nav a:hover {
     color: #A52A2A;
 }
 
-/* ===========================
-   HERO SECTIONS
-   =========================== */
+
+
+
+
+/* HERO SECTIONS */
 
 .hero-container {
     max-width: 725px;
@@ -185,9 +192,11 @@ nav a:hover {
     background-image: url("components.avif");
 }
 
-/* ===========================
-   MAIN CONTENT
-   =========================== */
+
+
+
+
+/* MAIN CONTENT */
 
 main {
     background-color: #FFFFFF;
@@ -198,9 +207,11 @@ main ul {
     list-style-image: url("marker.gif");
 }
 
-/* ===========================
-   TABLES
-   =========================== */
+
+
+
+
+/* TABLES */
 
 table {
     border: 2px solid #3399CC;
@@ -221,9 +232,11 @@ tr:nth-of-type(odd) {
     background-color: #F5FAFC;
 }
 
-/* ===========================
-   FORMS
-   =========================== */
+
+
+
+
+/* FORMS */
 
 form {
     display: flex;
@@ -257,9 +270,11 @@ legend {
     font-weight: normal;
 }
 
-/* ===========================
-   IDS & CLASSES
-   =========================== */
+
+
+
+
+/* IDS & CLASSES */
 
 #contact {
     font-size: 90%;
@@ -281,9 +296,11 @@ legend {
     text-align: left;
 }
 
-/* ===========================
-   FOOTER
-   =========================== */
+
+
+
+
+/* FOOTER */
 
 footer {
     background-color: #FFFFFF;
@@ -294,9 +311,11 @@ footer {
     font-family: Georgia, "Times New Roman", serif;
 }
 
-/* ===========================
-   MEDIUM DISPLAY
-   =========================== */
+
+
+
+
+/* MEDIUM DISPLAY */
 
 @media (min-width: 600px) {
 
@@ -353,9 +372,11 @@ footer {
     }
 }
 
-/* ===========================
-   LARGE DISPLAY
-   =========================== */
+
+
+
+
+/* LARGE DISPLAY */
 
 @media (min-width: 1024px) {
 
