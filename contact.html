@@ -49,11 +49,23 @@
 				<label for="myPhone">Phone:</label>
 				<input type="tel" id="myPhone" name="myPhone" maxlength="12">
 
+				<label for="myPreference">Preferred Communication Method:</label>
+				<input type:"checkbox" name="prefphone" value="yes"> Phone <br>
+				<input type:"checkbox" name="prefemail" value="yes"> Email <BR>
+				<input type:"checkbox" name="prefboth" value="yes"> Both <BR>
+
+				<label for="myPreference">Do you want to opt-in to receiving test messages:</label>
+				<input type="radio" name="optin" id="textY" value="textYes"> Yes<br>
+				<input type="radio" name="optin" id="textN" value="textNo"> No<br>
+
+				
 				<label for="myArrival">Arrival Date:</label>
 				<input type="date" id="myArrival" name="myArrival">
 
-				<label for="myComments">* Comments:</label>
-				<textarea id="myComments" name="myComments" rows="2" cols="30" required></textarea>
+				<label for="myMessage">* Description of Project:</label>
+				<textarea id="myMessage" name="myMessage" rows="4" cols="30" required></textarea>
+
+				
 
 				<input type="submit" value="Submit">
 
