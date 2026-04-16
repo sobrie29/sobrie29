@@ -1,14 +1,9 @@
 /* GLOBAL RESET */
-
 * {
     box-sizing: border-box;
 }
 
-
-
-
 /* BASE PAGE STYLES */
-
 body {
     background-color: #EAEAEA;
     color: #555555;
@@ -16,11 +11,7 @@ body {
     margin: 0;
 }
 
-
-
-
 /* LAYOUT WRAPPER */
-
 #wrapper {
     max-width: 1240px;
     margin: 0 auto;
@@ -33,11 +24,7 @@ body {
     );
 }
 
-
-
-
 /* HEADER */
-
 header {
     background-color: #d9e6ea;
     background-image: url("animation_pulse.gif");
@@ -78,12 +65,7 @@ header a:hover {
     color: #90C7E3;
 }
 
-
-
-
-
 /* HEADINGS */
-
 h1 {
     margin: 0;
     padding: 0.5em 0;
@@ -110,12 +92,7 @@ h3 {
     text-align: center;
 }
 
-
-
-
-
 /* NAVIGATION */
-
 nav {
     padding: 0;
     text-align: center;
@@ -150,12 +127,7 @@ nav a:hover {
     color: #A52A2A;
 }
 
-
-
-
-
 /* HERO SECTIONS */
-
 .hero-container {
     max-width: 725px;
     margin: 0 auto;
@@ -192,12 +164,7 @@ nav a:hover {
     background-image: url("components.avif");
 }
 
-
-
-
-
 /* MAIN CONTENT */
-
 main {
     background-color: #FFFFFF;
     padding: 1em;
@@ -207,12 +174,7 @@ main ul {
     list-style-image: url("marker.gif");
 }
 
-
-
-
-
 /* TABLES */
-
 table {
     border: 2px solid #3399CC;
     border-collapse: collapse;
@@ -232,12 +194,7 @@ tr:nth-of-type(odd) {
     background-color: #F5FAFC;
 }
 
-
-
-
-
 /* FORMS */
-
 form {
     display: flex;
     flex-direction: column;
@@ -270,12 +227,7 @@ legend {
     font-weight: normal;
 }
 
-
-
-
-
 /* IDS & CLASSES */
-
 #contact {
     font-size: 90%;
 }
@@ -296,12 +248,7 @@ legend {
     text-align: left;
 }
 
-
-
-
-
 /* FOOTER */
-
 footer {
     background-color: #FFFFFF;
     font-size: 75%;
@@ -311,12 +258,7 @@ footer {
     font-family: Georgia, "Times New Roman", serif;
 }
 
-
-
-
-
 /* MEDIUM DISPLAY */
-
 @media (min-width: 600px) {
 
     #wrapper {
@@ -372,12 +314,7 @@ footer {
     }
 }
 
-
-
-
-
 /* LARGE DISPLAY */
-
 @media (min-width: 1024px) {
 
     #wrapper {
