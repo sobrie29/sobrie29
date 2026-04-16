@@ -180,15 +180,20 @@ tr:nth-of-type(odd) {
 
 	#homehero,
 	#servicehero,
-	#trailhero {
+	#industrieshero, 
+	#contacthero,
+	#abouthero	{
 		height: 300px;
-		background-size: 100% 100%;
+		background-size: 100% 80%;
 		border-radius: 20px 0PX 0PX 0PX;
 		background-repeat: no-repeat;
 	}
+
 		#homehero { background-image: url("components.avif"); }
 		#servicehero { background-image: url("packaging_line.jpg"); }
-		#trailhero { background-image: url("trail.jpg"); }
+		#industrieshero { background-image: url("components.avif"); }
+		#contacthero { background-image: url("components.avif"); }
+		#abouthero { background-image: url("components.avif"); }
 
 
 
