@@ -244,13 +244,9 @@ fieldset.form-group {
     border: 1px solid #ccc;
     padding: 1em;
     margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
 }
-
-
-form fieldset {
-    grid-column: 1 / -1;
-}
-
 
 legend {
     font-weight: bold;
@@ -265,7 +261,6 @@ legend {
     margin-bottom: 0.4em;
     font-weight: normal;
 }
-
 
 /* MEDIUM DISPLAY */
 @media (min-width: 600px) {
@@ -321,6 +316,11 @@ legend {
         grid-gap: 1em;
     }
 
+
+    form fieldset {
+        grid-column: 1 / -1;
+        min-width: 0;
+    }
 
 
 	
