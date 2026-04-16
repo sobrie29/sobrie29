@@ -239,11 +239,18 @@ textarea {
     margin-bottom: 0.5em;
 }
 
+
 fieldset.form-group {
     border: 1px solid #ccc;
     padding: 1em;
     margin-bottom: 1em;
 }
+
+
+form fieldset {
+    grid-column: 1 / -1;
+}
+
 
 legend {
     font-weight: bold;
@@ -314,9 +321,8 @@ legend {
         grid-gap: 1em;
     }
 
-    fieldset.form-group {
-        grid-column: 1 / -1;
-    }
+
+
 	
     input[type="submit"] {
         grid-column: 2;
