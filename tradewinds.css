@@ -1,8 +1,14 @@
+/* ===========================
+   GLOBAL RESET
+   =========================== */
+
 * {
     box-sizing: border-box;
 }
 
-/* SECTION DECLARATIONS */
+/* ===========================
+   BASE PAGE STYLES
+   =========================== */
 
 body {
     background-color: #EAEAEA;
@@ -11,56 +17,55 @@ body {
     margin: 0;
 }
 
+/* ===========================
+   LAYOUT WRAPPER
+   =========================== */
 
-footer {
-    background-color: #FFFFFF;
-    font-size: 75%;
-    font-style: italic;
-    text-align: center;
-    padding: 2em;
-    font-family: Georgia, "Times New Roman", serif;
+#wrapper {
+    max-width: 1240px;
+    margin: 0 auto;
+    background-image: linear-gradient(
+        to bottom,
+        #d9e6ea 0px,
+        #d9e6ea 180px,
+        #d9e6ea 360px,
+        #005670 100%
+    );
 }
 
+/* ===========================
+   HEADER
+   =========================== */
 
 header {
     background-color: #d9e6ea;
-	background-image: url("animation_pulse.gif");
-	background-size: 175px 140px;
-		background-repeat: no-repeat;
-		
-		
+    background-image: url("animation_pulse.gif");
+    background-size: 175px 140px;
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
 
-    background-position: 10px 10px; /* space from left & top */
-
-    padding-left: 190px;  /* image width (175) + 10px left + 5px buffer */
+    padding-left: 190px;
     padding-right: 1em;
+    padding-bottom: 2.5em;
 
-	padding-bottom: 2.5em;
     font-family: Tahoma, sans-serif;
-    /*color: #FFFFFF; */
     text-align: right;
 }
 
-
 header h1 {
-    margin-bottom: 0.15em;   /* reduce gap below company name */
+    margin-bottom: 0.15em;
 }
 
 header .motto {
-    font-family: Tahoma, sans-serif;
-	margin: 0;
+    margin: 0 0 0.75em;
     font-size: 1.4rem;
     font-weight: 600;
     letter-spacing: 0.15em;
-    text-shadow: 3px 1px 1px #000000;	
-    margin-bottom: 0.75em;   /* space below motto */
-    /* padding-bottom: 0.25em; optional extra breathing room */
-
     text-transform: uppercase;
     color: #ffffff;
     opacity: 0.9;
+    text-shadow: 3px 1px 1px #000000;
 }
-
 
 header a:link,
 header a:visited {
@@ -72,48 +77,39 @@ header a:hover {
     color: #90C7E3;
 }
 
+/* ===========================
+   HEADINGS
+   =========================== */
 
 h1 {
     margin: 0;
     padding: 0.5em 0;
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: "Trebuchet MS", sans-serif;
     letter-spacing: 0.25em;
 }
 
 h2 {
     font-family: Tahoma, sans-serif;
-	margin: 0;
+    margin: 0 0 0.75em;
     font-size: 1.4rem;
     font-weight: 600;
     letter-spacing: 0.15em;
-    text-shadow: 3px 1px 1px #000000;	
-    margin-bottom: 0.75em;   /* space below motto */
-    /* padding-bottom: 0.25em; optional extra breathing room */
-
     text-transform: uppercase;
     color: #gggggg;
     opacity: 0.9;
-	text-align: center;
+    text-shadow: 3px 1px 1px #000000;
+    text-align: center;
 }
 
 h3 {
-    color: #000033;
     font-family: Georgia, "Times New Roman", serif;
-	text-align: center;
+    color: #000033;
+    text-align: center;
 }
 
-
-
-main {
-    background-color: #FFFFFF;
-	padding: 1em;
-}
-
-
-main ul {
-    list-style-image: url("marker.gif");
-}
-
+/* ===========================
+   NAVIGATION
+   =========================== */
 
 nav {
     padding: 0;
@@ -132,9 +128,9 @@ nav li {
 }
 
 nav a {
-    text-decoration: none;
     display: block;
     padding: 0.5em;
+    text-decoration: none;
 }
 
 nav a:link {
@@ -149,99 +145,89 @@ nav a:hover {
     color: #A52A2A;
 }
 
-/* TABLE DECLARATIONS */
+/* ===========================
+   HERO SECTIONS
+   =========================== */
 
+.hero-container {
+    max-width: 725px;
+    margin: 0 auto;
+}
 
+#homehero,
+#servicehero,
+#industrieshero,
+#contacthero,
+#abouthero {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 0 0 0;
+}
 
-table { 
-	border: 2px solid #3399CC; 
-	border-collapse: collapse; 
-	}
+#homehero {
+    background-image: url("components.avif");
+}
 
-td, th { 
-	padding: 0.5em;
-	border: 2px solid #3399CC;
-/*	font-family: Arial, sans-serif; */
+#servicehero {
+    background-image: url("packaging_line.jpg");
+}
+
+#industrieshero {
+    background-image: url("food_logos.jpg");
+}
+
+#contacthero {
+    background-image: url("components.avif");
+}
+
+#abouthero {
+    background-image: url("components.avif");
+}
+
+/* ===========================
+   MAIN CONTENT
+   =========================== */
+
+main {
+    background-color: #FFFFFF;
+    padding: 1em;
+}
+
+main ul {
+    list-style-image: url("marker.gif");
+}
+
+/* ===========================
+   TABLES
+   =========================== */
+
+table {
+    border: 2px solid #3399CC;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    padding: 0.5em;
+    border: 2px solid #3399CC;
 }
 
 td {
-	text-align: center;
+    text-align: center;
 }
 
 tr:nth-of-type(odd) {
     background-color: #F5FAFC;
 }
 
-
-
-/* ID Selectors */
-
-	#contact {
-		font-size: 90%;
-	}	
-
-	#tradeheader {
-		height: 100px;
-		background-size: 10% 100%;
-		background-repeat: no-repeat;
-	}
-		#tradeheader { background-image: url("white_logo.png"); }
-
-
-	.hero-container {
-    	max-width: 725px;
-    	margin: 0 auto;
-	}
-
-	#homehero,
-	#servicehero,
-	#industrieshero, 
-	#contacthero,
-	#abouthero	{
-		height: 400px;
-		background-size: cover;
-		border-radius: 20px 0PX 0PX 0PX;
-		background-position: center
-	}
-
-		#homehero { background-image: url("components.avif"); }
-		#servicehero { background-image: url("packaging_line.jpg"); }
-		#industrieshero { background-image: url("food_logos.jpg"); }
-		#contacthero { background-image: url("components.avif"); }
-		#abouthero { background-image: url("components.avif"); }
-
-
-
-#wrapper {
-	max-width: 1240px;
-    margin: 0 auto;
-    background-image: linear-gradient(
-        to bottom,
-        #d9e6ea 0px,
-        #d9e6ea 180px,
-        #d9e6ea 360px,
-        #005670 100%
-    );
-}
-
-
-
-/* CLASS DECLARATIONS */
-
-	.address {
-		color: #005670;
-		font-weight: bold;
-	}
-
-	.text {
-		text-align: left;
-	}
-
+/* ===========================
+   FORMS
+   =========================== */
 
 form {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
 }
 
 input,
@@ -249,13 +235,12 @@ textarea {
     margin-bottom: 0.5em;
 }
 
-
 fieldset.form-group {
+    display: flex;
+    flex-direction: column;
     border: 1px solid #ccc;
     padding: 1em;
     margin-bottom: 1em;
-    display: flex;
-    flex-direction: column;
 }
 
 legend {
@@ -272,10 +257,49 @@ legend {
     font-weight: normal;
 }
 
-/* MEDIUM DISPLAY */
+/* ===========================
+   IDS & CLASSES
+   =========================== */
+
+#contact {
+    font-size: 90%;
+}
+
+#tradeheader {
+    height: 100px;
+    background-image: url("white_logo.png");
+    background-size: 10% 100%;
+    background-repeat: no-repeat;
+}
+
+.address {
+    color: #005670;
+    font-weight: bold;
+}
+
+.text {
+    text-align: left;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+
+footer {
+    background-color: #FFFFFF;
+    font-size: 75%;
+    font-style: italic;
+    text-align: center;
+    padding: 2em;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+/* ===========================
+   MEDIUM DISPLAY
+   =========================== */
+
 @media (min-width: 600px) {
 
-	
     #wrapper {
         border: 1px solid #000033;
         box-shadow: 3px 3px 3px #000033;
@@ -283,8 +307,6 @@ legend {
 
     nav ul {
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
         justify-content: space-around;
     }
 
@@ -294,55 +316,47 @@ legend {
 
     .flow {
         display: flex;
-        flex-direction: row;
     }
-
-	section {
-		flex: 1;
-	}
-
-	.main-section {
-		flex: 2.5;
-	}
 
     section {
-		border: 2.5px solid #005670;
-		border-radius: 5px;
-		padding: .25em .25em .25em .3em;
-		margin-left: .25em;
-        margin-right: .25em;
         flex: 1;
+        border: 2.5px solid #005670;
+        border-radius: 5px;
+        padding: 0.25em;
+        margin: 0.25em;
     }
-	
-	sessionul{
-		list-style-type: none;
-	}
-	
+
+    .main-section {
+        flex: 2.5;
+    }
+
+    sessionul {
+        list-style-type: none;
+    }
+
     form {
         width: 60%;
         max-width: 30em;
         display: grid;
         grid-template-columns: 6em 1fr;
-        grid-gap: 1em;
+        gap: 1em;
     }
-
 
     form fieldset {
         grid-column: 1 / -1;
         min-width: 0;
     }
 
-
-	
     input[type="submit"] {
         grid-column: 2;
         width: 9em;
     }
 }
 
+/* ===========================
+   LARGE DISPLAY
+   =========================== */
 
-
-/* LARGE DISPLAY */
 @media (min-width: 1024px) {
 
     #wrapper {
@@ -357,11 +371,25 @@ legend {
 
     @supports (display: grid) {
 
-        header { grid-area: header; }
-        nav { grid-area: nav; }
-        .hero { grid-area: hero; }
-        main { grid-area: main; }
-        footer { grid-area: footer; }
+        header {
+            grid-area: header;
+        }
+
+        nav {
+            grid-area: nav;
+        }
+
+        .hero {
+            grid-area: hero;
+        }
+
+        main {
+            grid-area: main;
+        }
+
+        footer {
+            grid-area: footer;
+        }
 
         nav ul {
             flex-direction: column;
