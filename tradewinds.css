@@ -238,6 +238,12 @@ textarea {
 /* MEDIUM DISPLAY */
 @media (min-width: 600px) {
 
+	
+    #wrapper {
+        border: 1px solid #000033;
+        box-shadow: 3px 3px 3px #000033;
+    }
+
     nav ul {
         display: flex;
         flex-direction: row;
