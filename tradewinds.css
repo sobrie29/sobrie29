@@ -300,6 +300,26 @@ footer {
     max-width: 800px;
 }
 
+/* RESPONSIVE HEADER TYPOGRAPHY */
+@media (max-width: 480px) {
+
+    header {
+        padding-left: clamp(90px, 25vw, 130px);
+        padding-right: 0.75em;
+    }
+
+    header h1 {
+        font-size: clamp(1.1rem, 4vw, 1.25rem);
+        letter-spacing: 0.12em;
+    }
+
+    header .motto {
+        font-size: clamp(0.9rem, 3.5vw, 1rem);
+        letter-spacing: 0.07em;
+    }
+}
+
+
 /* MEDIUM DISPLAY */
 @media (min-width: 600px) {
 
