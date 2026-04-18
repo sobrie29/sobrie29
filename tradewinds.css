@@ -301,6 +301,10 @@ footer {
 }
 
 @media (max-width: 360px) {
+    header {
+        padding-top: 180px;
+    }
+
     header h1 {
         font-size: 1.15rem;
     }
@@ -310,35 +314,37 @@ footer {
     }
 }
 
-/* RESPONSIVE HEADER TYPOGRAPHY */
+/* MOBILE HEADER – NO OVERLAP GUARANTEED */
 @media (max-width: 480px) {
 
     header {
-        
-        background-position: center 15px;
-        background-size: 120px auto;
+        background-position: top center;
+        background-size: 110px auto;
 
-        padding-left: 1em;   /* remove logo offset */
-        padding-top: 150px;  /* create space for logo */
+        padding-top: 165px; /* space for logo */
+        padding-left: 1em;
         padding-right: 1em;
         padding-bottom: 1.5em;
+
         text-align: center;
     }
 
     header h1 {
         font-size: 1.25rem;
-        letter-spacing: 0.15em;
+        letter-spacing: 0.14em;
         line-height: 1.25;
-        margin-top: 0.5em;
-        max-width: 100%;
+        margin: 0.25em 0;
     }
 
     header .motto {
+        display: block;      /* ensures full line */
         font-size: 1rem;
         letter-spacing: 0.08em;
-        max-width: 100%;
+        margin-top: 0.5em;   /* pushes away from h1 */
+        line-height: 1.2;
     }
 }
+
 
 
 /* MEDIUM DISPLAY */
