@@ -154,7 +154,12 @@ nav a:hover {
 
 #industrieshero {
     background-image: url("logos.png");
+    height: 400px;
+    background-size: cover;
+    background-position: top left;
+    border-radius: 20px 0 0 0;
 }
+
 
 #contacthero {
     background-image: url("components.avif");
