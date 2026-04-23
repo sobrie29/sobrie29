@@ -304,6 +304,25 @@ footer {
     max-width: 800px;
 }
 
+.video-section {
+  max-width: 900px;
+  margin: 2.5em auto;
+  padding: 0 1em; /* prevents edge clipping on mobile */
+  text-align: center;
+}
+
+.feature-video {
+  width: 100%;      /* responsive scaling */
+  height: auto;     /* maintains aspect ratio */
+  display: block;
+  max-width: 800px; /* keeps it from being too large on desktop */
+  margin: 1.2em auto;
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+
+
 @media (max-width: 360px) {
     header {
         padding-top: 180px;
